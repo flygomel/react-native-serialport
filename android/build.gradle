@@ -29,14 +29,11 @@ android {
 
 repositories {
     mavenCentral()
-    flatDir {
-        dirs 'libs'
-    }
 }
 
 dependencies {
     implementation 'com.google.guava:guava:27.0.1-android'
     implementation 'com.facebook.react:react-native:+'
     implementation fileTree(dir: 'libs', include: ['usbserial-6.0.5-release.aar'])
-    implementation files('libs/usbserial-6.0.5-release.aar')
+    implementation 'com.github.felHR85:UsbSerial:6.0.5'
 }
